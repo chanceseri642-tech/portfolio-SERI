@@ -1,0 +1,221 @@
+
+/* Défilement fluide entre les sections */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Évite que le menu fixe cache les titres */
+section {
+    scroll-margin-top: 80px;
+}
+
+/* Taille maximale de l'image de profil */
+.profile-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Apparence des cartes de projets */
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Effet au passage de la souris */
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* Taille des illustrations des projets */
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+/* ================================
+   THÈME CYBERSÉCURITÉ
+================================ */
+
+/* Couleurs générales */
+:root {
+    --couleur-fond: #0b1120;
+    --couleur-secondaire: #111c32;
+    --couleur-bleue: #00bfff;
+    --couleur-verte: #00ff9c;
+    --couleur-texte: #e6edf7;
+}
+
+/* Apparence générale */
+body {
+    background-color: var(--couleur-fond);
+    color: var(--couleur-texte);
+}
+
+/* Barre de navigation */
+.navbar {
+    background-color: #080d19 !important;
+    border-bottom: 1px solid rgba(0, 191, 255, 0.25);
+}
+
+.navbar-brand {
+    color: var(--couleur-verte) !important;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.navbar .nav-link {
+    color: #dbeafe !important;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: var(--couleur-bleue) !important;
+}
+
+/* Titres */
+h1,
+h2,
+h3 {
+    color: #ffffff;
+}
+
+h1 span,
+h2 span {
+    color: var(--couleur-bleue);
+}
+
+/* Liens */
+a {
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--couleur-verte);
+}
+
+/* Boutons */
+.btn-primary {
+    background-color: #087cf0;
+    border-color: #087cf0;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--couleur-bleue);
+    border-color: var(--couleur-bleue);
+    color: #08111f;
+    transform: translateY(-2px);
+    box-shadow: 0 0 15px rgba(0, 191, 255, 0.35);
+}
+
+/* Cartes des projets et compétences */
+.card {
+    background-color: var(--couleur-secondaire);
+    color: var(--couleur-texte);
+    border: 1px solid rgba(0, 191, 255, 0.18);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 191, 255, 0.15);
+}
+
+.card .card-title {
+    color: var(--couleur-bleue);
+}
+
+/* Champs du formulaire de contact */
+.form-control {
+    background-color: #111c32;
+    color: #ffffff;
+    border: 1px solid #30415e;
+}
+
+.form-control:focus {
+    background-color: #111c32;
+    color: #ffffff;
+    border-color: var(--couleur-bleue);
+    box-shadow: 0 0 0 0.2rem rgba(0, 191, 255, 0.2);
+}
+
+.form-control::placeholder {
+    color: #a6b4ca;
+}
+
+/* Pied de page */
+footer {
+    background-color: #080d19;
+    color: #dbeafe;
+    border-top: 1px solid rgba(0, 191, 255, 0.25);
+}
+
+/* Sélection du texte */
+::selection {
+    background-color: var(--couleur-bleue);
+    color: #08111f;
+} 
+#accueil h1 {
+    color: #000000;
+} 
+#accueil p {
+    color: #000000;
+}  
+#competences h2 {
+    color: #000000;
+}
+
+#competences h2 .portfolio-blanc,
+#competences h2 .portfolio-bleu {
+    color: #000000;
+} 
+#faq h2 {
+    color: #000000;
+}
+
+#faq h2 .portfolio-blanc,
+#faq h2 .portfolio-bleu {
+    color: #000000;
+} 
+/* Boutons Bootstrap rouges */
+.btn-primary {
+background-color: #dc3545;
+border-color: #dc3545;
+color: #ffffff;
+}
+
+/* Effet au survol */
+.btn-primary:hover {
+background-color: #bb2d3b;
+border-color: #b02a37;
+color: #ffffff;
+}
+
+/* Bouton rouge lorsqu'on clique dessus */
+.btn-primary:active,
+.btn-primary.active {
+background-color: #b02a37;
+border-color: #a52834;
+}
+
+/* Contour rouge au moment de la sélection */
+.btn-primary:focus {
+box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.35);
+}
+/* Bouton Portfolio en rouge */
+.navbar .navbar-brand {
+background-color: #dc3545;
+color: #ffffff !important;
+padding: 8px 15px;
+border-radius: 8px;
+transition: all 0.3s ease;
+}
+
+/* Effet au survol */
+.navbar .navbar-brand:hover {
+background-color: #bb2d3b;
+color: #ffffff !important;
+box-shadow: 0 0 12px rgba(220, 53, 69, 0.4);
+}
+
